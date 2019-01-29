@@ -1,43 +1,108 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans:400,600|Amatic+SC');
-
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans:400,600|Amatic+SC|Patrick+Hand');
 body {
+    background-attachment: fixed;
+    background-image: linear-gradient(141deg, #e0121265 0%, #1fc8db 90%, #2cb5e8 45%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #13314d;
     font-family: Open Sans, sans-serif;
-    margin-top: 15px;
-    margin-left: 10%;
     margin-right: 10%;
-    background-color: #1fc8db; /* For browsers that do not support gradients */        
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    color: white;
+    margin-left: 10%;
+    margin-top: 15px;
     opacity: 0.95;
-
 }
 
 span {
-    color: #2266DD;
+    color: #254f96;
+    font-weight: bold;
 }
 
 h1 {
+    border-bottom: 5px solid white;
     font-family: Amatic SC, cursive;
-    text-align: center;
-    text-transform: uppercase;
     font-size: 75px;
     letter-spacing: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
+    color: #ffffff;
+    font-family: Patrick Hand, cursive;
+    font-size: 2rem;
     text-align: left;
     text-decoration: underline;
-    color: wheat;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #f5deb3;
+    font-family: Patrick Hand, cursive;
+    font-size: 1.5rem;
+    padding-left: 15px;
 }
 
 img {
-    float: left;
-    margin: 5%;
-    width: 20%;
+    float: right;
+    margin: 50px;
+    width: 250px;
 }
 
 p {
+    padding-left: 25px;
     text-align: justify;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline wavy white;
+}
+
+a:visited {
+    color: #f0f8ff;
+}
+
+table {    
+    background-image: url(/web-Gijon/imagenes/fondo_tabla.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: grey 2px solid;
+    border-collapse: collapse;
+    border-right-style: grey 2px solid;
+    color: black;
+    width: 60%;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    background-color: aliceblue;
+    border: grey 1px solid;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 10px;
+}
+
+td:nth-child(even) {
+    background-color: #a7cff1;
+}
+
+td.distrito {
+    border-left: grey 10px solid;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
 }
